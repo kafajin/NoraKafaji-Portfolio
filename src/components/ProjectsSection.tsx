@@ -111,8 +111,8 @@ export const ProjectsSection = () => {
             My Projects
           </h2>
           <p className="text-gray-300 mb-4">
-            I’ve completed four personal projects and enjoy working on
-            smaller apps, tools, and games to sharpen my skills.
+            I’ve completed four personal projects and enjoy working on smaller
+            apps, tools, and games to sharpen my skills.
           </p>
           <p className="text-gray-300 mb-4">
             Some projects are finished, others still in progress — I love
@@ -186,18 +186,27 @@ export const ProjectsSection = () => {
                     <div className="flex gap-4 pt-4">
                       <a
                         href={project.links.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center gap-2 px-4 py-2 bg-gray-700/50 hover:bg-gray-600/50 text-white rounded-lg transition-colors"
                       >
                         <Github className="w-4 h-4" />
                         Code
                       </a>
-                      <a
-                        href={project.links.demo}
-                        className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
-                      >
-                        <ExternalLink className="w-4 h-4" />
-                        Demo
-                      </a>
+
+                      {project.links.demo &&
+                        project.links.demo.trim() !== "" &&
+                        project.links.demo !== "#" && (
+                          <a
+                            href={project.links.demo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors"
+                          >
+                            <ExternalLink className="w-4 h-4" />
+                            Demo
+                          </a>
+                        )}
                     </div>
                   </div>
                 </div>
@@ -265,18 +274,27 @@ export const ProjectsSection = () => {
                     <div className="flex gap-4 pt-4">
                       <a
                         href={project.links.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center gap-2 px-4 py-2 bg-gray-700/50 hover:bg-gray-600/50 text-white rounded-lg transition-colors"
                       >
                         <Github className="w-4 h-4" />
                         Code
                       </a>
-                      <a
-                        href={project.links.demo}
-                        className="flex items-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors"
-                      >
-                        <ExternalLink className="w-4 h-4" />
-                        Demo
-                      </a>
+
+                      {project.links.demo &&
+                        project.links.demo.trim() !== "" &&
+                        project.links.demo !== "#" && (
+                          <a
+                            href={project.links.demo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors"
+                          >
+                            <ExternalLink className="w-4 h-4" />
+                            Demo
+                          </a>
+                        )}
                     </div>
                   </div>
                 </div>
