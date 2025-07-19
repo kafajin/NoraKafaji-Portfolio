@@ -83,7 +83,7 @@ export const HeroSection = () => {
               <Linkedin className="w-6 h-6 text-blue-400" />
             </a>
             <a
-              href="#"
+              href="https://github.com/kafajin"
               target="_blank"
               rel="noopener noreferrer"
               className="p-4 bg-white/10 backdrop-blur-md rounded-lg hover:bg-white/20 transition-colors border border-white/20"

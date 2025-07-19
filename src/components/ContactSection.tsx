@@ -64,7 +64,7 @@ export const ContactSection = () => {
                 <Github className="w-6 h-6 text-gray-400 group-hover:scale-110 transition-transform" />
                 <div>
                   <p className="text-white font-semibold">GitHub</p>
-                  <p className="text-gray-300">github.com/norakafaji</p>
+                  <p className="text-gray-300">github.com/kafajiin</p>
                 </div>
               </a>
 
@@ -118,7 +118,7 @@ export const ContactSection = () => {
                     <Linkedin className="w-5 h-5 text-blue-500" />
                   </a>
                   <a
-                    href="#"
+                    href="https://github.com/kafajin"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 bg-white/5 rounded-full hover:bg-white/10 transition-colors"
